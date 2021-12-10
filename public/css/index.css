@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kalam', cursive;
+    scroll-behavior: smooth;
+}
+html{
+    --btnhover :rgb(198, 53, 53);
+--btnhover2:rgb(48, 58, 47);
+}
+ /* navbar */
+ .topnav {
+    overflow: hidden;
+    
+  }
+  .navbar{
+    border:none;
+  }
+  .topnav a {
+    float:right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  .topnav li a {
+    padding-left: 0.8rem;
+    font-weight: 800;
+}
+.topnav:last-child{
+   margin-left: 40rem;
+}
+.topnav li a:hover{
+color: var(--btnhover);
+}
+.logo{
+    font-weight: 1000;
+ font-size: 2rem;
+ letter-spacing: 0.5rem;
+ text-shadow: 2px 2px 4px rgb(119, 117, 117) ;
+}
+/* home page */
+.home{
+    margin-top: 10rem;
+}
+.vpage{
+    height: 100vh;
+     
+}
+.herotext{
+    line-height: 2rem;
+    font-weight: 600;
+    color: var(--btnhover);
+
+}
+.img {
+    height: 50vh;
+ }
+  
+ 
+ .btn{
+background-color: rgb(167, 167, 167);
+color:rgb(15, 15, 15);
+border: none;
+font-weight: 1000;
+padding: 0.5rem , 0.5rem;
+ }
+ .btn:hover{
+ background-color: var(--btnhover);
+ } 
+ .about{
+    line-height: 2rem;
+    font-weight: 600;
+     color:rgb(240, 208, 27) ;
+ }
+ .aboutbtn:hover{
+background-color: rgb(240, 208, 27);
+color: var(--btnhover2) ;
+ }
+ 
+.title{
+ padding-top: 5rem;
+  
+    display: flex;
+    justify-content: center;
+    font-weight: 1000;
+    letter-spacing: 0,9rem;
+    color: rgb(14, 32, 2);
+    
+   text-shadow: 2px 2px 4px rgb(119, 117, 117) ;
+    animation: gradient 2s infinite;
+}
+@keyframes gradient {
+    0%{
+        background : linear-gradient(to right,rgb(31, 36, 39),rgb(181, 218, 231) );
+        -webkit-background-clip: text;
+    }
+    25%{
+        background : linear-gradient(rgb(27, 214, 37),rgb(140, 163, 118));
+        -webkit-background-clip: text;
+    }
+    50%{
+    background : linear-gradient( rgb(82, 61, 73),rgb(162, 137, 190) );
+    -webkit-background-clip: text;
+    }
+    75%{
+    background : linear-gradient(to left, rgb(57, 194, 148),rgb(69, 105, 83) );
+    -webkit-background-clip: text;
+    }
+    100%{
+    background : linear-gradient(to right, rgb(182, 112, 103),rgb(223, 39, 131) );
+    -webkit-background-clip: text;
+    }
+}
+ /* setting section */
+.service_items{
+ 
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 2px rgb(119, 117, 117) ;
+    cursor: pointer;
+    width: 20rem;
+    height: 10rem;
+    margin: 0.5rem;
+    text-align: center;
+    padding: 1rem;
+
+ }
+ .service_items h4{
+     font-weight: 1000;
+ }
+ #settings:hover{
+ background-image: linear-gradient(to right,rgb(14, 54, 77),rgb(166, 217, 237) );
+ color: #fff;
+ }
+ #speedup:hover{
+    background-image: linear-gradient(rgb(27, 214, 37),rgb(53, 99, 11));
+    color: #fff;
+
+ }
+ #privacy:hover{
+    background-image: linear-gradient(to left, rgb(47, 11, 73),rgb(162, 137, 190) );
+    color: #fff;
+ }
+ #backups:hover{
+    background-image: linear-gradient(to right, rgb(56, 13, 7),rgb(223, 39, 131) );
+    color: #fff;
+ }
+ #secured:hover{
+    background-image: linear-gradient( rgb(73, 11, 45),rgb(162, 137, 190) );
+    color: #fff;
+ }
+ #database:hover{
+    background-image: linear-gradient(to left, rgb(57, 194, 148),rgb(2, 17, 8) );
+    color: #fff;
+ }
+  /* contact us */
+
+  
+ .submit, .form-group{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+     margin: auto;
+    justify-content: center;
+}
+ .submit{
+     width: 10rem;
+     align-items: center;
+ }
+ @media screen and (max-width: 600px) {
+   .img .img2 {
+     width: 100%;
+     height: 100%;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .resDropdown ul{
+      display: none;
+    }
+   
+   .navbar:hover .resDropdown ul{
+display: flex;
+margin: auto;
+
+}
+.img{
+  width: 100%;
+  height: 100%;
+}
+.service_items{
+  width: 90%;
+}
+.aboutmrgn{
+margin-top: -10rem;
+}
+.home3{
+  margin-top: 2rem;
+}
+.thanku img{
+width: 15rem;
+margin-top: 5rem;
+margin-bottom: 10px;
+}}
+    
+    
