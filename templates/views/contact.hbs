@@ -38,22 +38,17 @@
   </div>
   </div>
   
- 
- 
-     
-
- 
-    </nav>
+  </nav>
 
      <div class="col-md-10 col-12 mx-auto ">
      <h1 id="contact" class="title">Contact Us</h1>
 
-   <div class="row vpage ">
+   <div class="row vpage contactform">
     <form action="/contact" method="POST">
    
-      <div class="form-group">
+      <div class="form-group mt-3">
  {{#if message.type }}
-                      <ul class="list-group bg-danger my-2" >
+                      <ul class="list-group bg-danger text-light  py-1 px-1 my-2" >
                 {{message.body}}
                      </ul>
               
@@ -63,53 +58,53 @@
                   {{/if}}
       </div>
    
-  <div class="form-group">
+  <div class="form-group mt-3 ">
     <label for="firstname">Name</label>
   <input type="text" class="form-control" id="firstname" name="name" placeholder="Name" value="{{FormData.name}}" >
  {{#if message.type}}
-                    <ul class="list-group alert-danger my-2" >
+                    <span class="list-group text-danger my-2 " >
                 {{ errors.name}}
-                     </ul>
+                     </span>
                      
                     {{/if}}
   </div>
-  <div class="form-group ">
+  <div class="form-group mt-3  ">
       <label for="inputEmail">Email</label>
       <input type="text" class="form-control" id="inputEmail" name="email" placeholder="Email Adress" value="{{FormData.email}}" minlength="128"> 
         {{#if message.type}}
-                    <ul class="list-group alert-danger my-2"  >
+                    <span class="list-group text-danger my-2"  >
                 {{   errors.email}}
-                     </ul>
+                     </span>
                      
                     {{/if}}
     </div>
-    <div class="form-group  ">
+    <div class="form-group mt-3   ">
       <label for="inputCity">City</label>
       <input type="text" class="form-control" id="inputCity" name="city" placeholder="City Name" value="{{FormData.city}}" >
         {{#if message.type}}
-                    <ul class="list-group alert-danger my-2"  >
+                    <span class="list-group text-danger my-2"  >
                 {{ errors.city}}
-                     </ul>
+                     </span>
                      
                     {{/if}}
     </div>
-    <div class="form-group  ">
+    <div class="form-group mt-3   ">
       <label for="phone">Phone</label>
       <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number" value="{{FormData.phone}}" minlength="10"  maxlength="10" >
      {{#if message.type}}
-                    <ul class="list-group alert-danger my-2" >
+                    <span class="list-group text-danger my-2" >
                 {{   errors.phone}}
-                     </ul>
+                     </span>
                      
                     {{/if}}
     </div>
-  <div class="form-group">
+  <div class="form-group mt-3 ">
     <label for="message">Message</label>
     <input type="text" class="form-control" id="message" name="message" placeholder="message for us" value="{{FormData.message}}"  >
       {{#if message.type}}
-                    <ul class="list-group alert-danger my-2" >
+                    <span class="list-group text-danger my-2" >
                 {{   errors.message}}
-                     </ul>
+                     </span>
                      
                     {{/if}}
   </div>
