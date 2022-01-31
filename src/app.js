@@ -37,6 +37,7 @@ hbs.registerPartials(partialsPath)
   
    app.get("/contact",(req,res)=>{
     res.render("contact")
+    
   });
  
       
@@ -51,7 +52,7 @@ hbs.registerPartials(partialsPath)
          
           const validateReg = regSchema.validate(req.body,{abortEarly:false});
           if(validateReg.error){
-            // console.log(validateReg.error)
+            console.log(validateReg.error)
        return res.render("contact",
        {message:{
       type:'error',
@@ -70,7 +71,7 @@ FormData:req.body}
   phone:req.body.phone,
   message:req.body.message
 });
-// console.log(saveMessage)
+console.log(saveMessage)
  
 await saveMessage.save();
 res.status(201).render("thanku",{message:{
@@ -81,6 +82,7 @@ FormData:req.body})}
 
 
   catch(e){
+ 
         
         return res.status(400).render('index',{message:{
             type:'error',
@@ -101,5 +103,5 @@ FormData:req.body})}
 
    //listening to port
     app.listen(port,()=>{
-        // console.log(`listening :${port}`)
+        console.log(`listening :${port}`)
       })

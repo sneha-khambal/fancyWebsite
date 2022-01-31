@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 //connection to db;
-mongoose.connect("mongodb://localhost:27017/dynamicpage ")
+mongoose.connect(process.env.MONGODB_URI || " mongodb://localhost:27017/dynamicpage ",)
  
 .then(
     ()=>{

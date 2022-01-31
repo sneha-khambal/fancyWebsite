@@ -8,6 +8,9 @@
     "start": "node src/app.js",
     "dev": "nodemon src/app.js -e js,hbs"
   },
+  "engines": {
+    "node": "14.17.6"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
